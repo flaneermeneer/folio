@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Title — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+
+  <header class="site-nav">
+    <a href="index.html" class="site-nav-name">Atakan Ekinci</a>
+    <nav>
+      <ul class="site-nav-links">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+
+    <!-- hero -->
+    <section class="project-hero">
+      <a href="index.html#work" class="back-link">← Back to work</a>
+      <header class="project-hero-header">
+        <p class="project-hero-number">Project 01</p>
+        <h1 class="project-hero-title">51WestFilms</h1>
+        <p class="project-hero-sub">A portfolio website for a Haarlem-based film company, designed to showcase their work and convert visitors into clients.</p>
+      </header>
+      <figure class="project-hero-img">
+        <img src="images/51WEST.png" alt="Project cover image" />
+       
+      </figure>
+    </section>
+
+    <!-- meta -->
+    <aside class="project-meta">
+      <dl class="project-meta-grid">
+        <div class="meta-item">
+          <dt>Role</dt>
+          <dd>Designer / Developer</dd>
+        </div>
+        <div class="meta-item">
+          <dt>Tools</dt>
+          <dd>HTML / CSS / WordPress</dd>
+        </div>
+        <div class="meta-item">
+          <dt>Year</dt>
+          <dd>2025</dd>
+        </div>
+        <div class="meta-item meta-links">
+          <dt>Links</dt>
+          <dd>
+            <a href="#" target="_blank" rel="noopener">Live project ↗</a>
+            <a href="#" target="_blank" rel="noopener">GitHub ↗</a>
+          </dd>
+        </div>
+      </dl>
+    </aside>
+
+    <!-- case study -->
+    <article class="project-body">
+
+      <section class="case-block">
+        <h2 class="case-label">Overview</h2>
+        <p class="case-text">51WestFilms is a starting audiovisual company based in Haarlem. They needed a website that presents their work professionally while also making it easy for potential clients to get in touch.
+          The goal was to create a clean and visually focused platform where their projects take center stage, while still supporting key actions like contacting the team and finding their social channels.
+          The challenge was to balance strong visual presentation with clear structure — making sure the site feels high-quality without becoming overwhelming or difficult to navigate.</p>
+      </section>
+
+      <section class="case-block">
+        <h2 class="case-label">My role</h2>
+        <div>
+          <p class="case-text">This was a solo project where I was responsible for the entire process, from concept to execution.</p>
+          <ul class="case-list">
+            <li>Defined the concept and direction based on research into AI usage and transparency</li>
+            <li>Designed and prototyped the full experience from early ideas to interactive flows</li>
+            <li>Developed multiple iterations to refine usability and clarity</li>
+            <li>Built and tested digital interactions to communicate AI presence effectively</li>
+            <li>Translated abstract ideas into a concrete and understandable product</li>
+          </ul>
+        </div>
+      </section>
+
+      <figure class="project-gallery">
+        <img src="" alt="Project screenshot 1" class="gallery-img" />
+        <img src="" alt="Project screenshot 2" class="gallery-img" />
+        <figcaption>Add your project screenshots here</figcaption>
+      </figure>
+
+      <section class="case-block">
+        <h2 class="case-label">Process</h2>
+        <p class="case-text">I started by identifying the core goal of the website: showcasing audiovisual work while making it easy for potential clients to take action.
+          From there, I explored references from similar film and portfolio websites to understand how visual content is best presented. Based on this, I defined a minimal structure where the work remains central, supported by clear navigation and accessible contact options.
+          I moved into design by creating initial layouts and testing different ways to display video content without cluttering the interface. The focus was on hierarchy, spacing, and keeping the experience clean.
+          After defining the direction, I translated the design into a working website. I developed multiple iterations, refining layout, responsiveness, and interaction details to improve usability across devices.
+          Throughout the process, I continuously evaluated how the site feels in use, making sure users can quickly understand the brand, view the work, and find ways to get in touch or access social channels.</p>
+      </section>
+
+      <figure class="project-img-wide">
+        <img src="" alt="Process screenshot" />
+        <figcaption>Process / wireframe — add your image</figcaption>
+      </figure>
+
+      <section class="case-block">
+        <h2 class="case-label">Result</h2>
+        <p class="case-text">The final result is a clean and professional portfolio website that gives 51WestFilms a strong online presence.
+          The platform highlights their work while supporting key actions like contacting the team and navigating to their social media. It provides a solid foundation for a growing company to present themselves and attract new clients.
+          Looking back, I would explore adding more motion or interaction to better reflect the dynamic nature of video work. While the current version is clear and effective,
+          there’s room to push the experience further visually.</p>
+      </section>
+
+    </article>
+
+    <!-- prev/next -->
+    <nav class="project-nav" aria-label="Project navigation">
+      <a href="project-grad.html" class="project-nav-prev">
+        <span>Previous</span>
+        <strong>Project: Graduation - FaunAI </strong>
+      </a>
+      <a href="project-dss.html" class="project-nav-next">
+        <span>Next</span>
+        <strong>Project: Digital Society School</strong>
+      </a>
+    </nav>
+
+  </main>
+
+  <script>
+    const cursor = document.getElementById('cursor');
+    document.addEventListener('mousemove', e => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top  = e.clientY + 'px';
+    });
+  </script>
+
+</body>
+</html>

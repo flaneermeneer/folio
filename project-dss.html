@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Title — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+
+  <header class="site-nav">
+    <a href="index.html" class="site-nav-name">Atakan Ekinci</a>
+    <nav>
+      <ul class="site-nav-links">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+
+    <!-- hero -->
+    <section class="project-hero">
+      <a href="index.html#work" class="back-link">← Back to work</a>
+      <header class="project-hero-header">
+        <p class="project-hero-number">Project 03</p>
+        <h1 class="project-hero-title">Digital Society School - Safe Space Toolbox</h1>
+        <p class="project-hero-sub">A digital and physical toolkit designed to support inclusive collaboration and empower marginalized communities.</p>
+      </header>
+      <figure class="project-hero-img">
+        <img src="images/DSS.png"" alt="Project cover image" />
+       
+      </figure>
+    </section>
+
+    <!-- meta -->
+    <aside class="project-meta">
+      <dl class="project-meta-grid">
+        <div class="meta-item">
+          <dt>Role</dt>
+          <dd>UI Designer & Researcher</dd>
+        </div>
+        <div class="meta-item">
+          <dt>Tools</dt>
+          <dd>Figma & WordPress</dd>
+        </div>
+        <div class="meta-item">
+          <dt>Year</dt>
+          <dd>2024/2025</dd>
+        </div>
+        <div class="meta-item meta-links">
+          <dt>Links</dt>
+          <dd>
+            <a href="#" target="_blank" rel="noopener">Live project ↗</a>
+            <a href="#" target="_blank" rel="noopener">GitHub ↗</a>
+          </dd>
+        </div>
+      </dl>
+    </aside>
+
+    <!-- case study -->
+    <article class="project-body">
+
+      <section class="case-block">
+        <h2 class="case-label">Overview</h2>
+        <p class="case-text">This project was developed during my internship at Digital Society School in collaboration with Society Fresh. 
+          The goal was to create a toolkit and digital platform that helps policymakers, workshop facilitators, and communities collaborate in a more inclusive way.
+          The platform functions similarly to a forum-like environment where users can explore outcomes, generate insights, and make decisions for designing “safe spaces.” Alongside the digital tool, 
+          we developed physical components such as card-based games to support co-creation sessions.
+          The project focused on making participation more accessible, especially for marginalized groups, by combining design, storytelling, and interactive tools.</p>
+      </section>
+
+      <section class="case-block">
+        <h2 class="case-label">My role</h2>
+        <div>
+          <p class="case-text">I worked as a designer within a multidisciplinary team, focusing on both the digital platform and supporting visual systems.</p>
+          <ul class="case-list">
+            <li>Designed and prototyped the digital platform from early concepts to high-fidelity interactive flows/li>
+            <li>Created a visual styleguide to ensure consistency across the product and team outputs</li>
+            <li>Conducted research into existing platforms and translated insights into design decisions</li>
+            <li>Iterated on the product through user testing, peer reviews, and stakeholder feedback</li>
+            <li>Contributed to communication by maintaining project updates through WordPress</li>
+          </ul>
+        </div>
+      </section>
+
+      <figure class="project-gallery">
+        <img src="" alt="Project screenshot 1" class="gallery-img" />
+        <img src="" alt="Project screenshot 2" class="gallery-img" />
+        <figcaption>Add your project screenshots here</figcaption>
+      </figure>
+
+      <section class="case-block">
+        <h2 class="case-label">Process</h2>
+        <p class="case-text">We started the project with research, analyzing existing platforms such as online forums and tools used by NGOs to understand how users share experiences and interact.
+           These insights helped us define the direction of the concept and identify what would actually be useful for the target group.
+           From there, I took the lead on translating these insights into digital concepts.<br><br> I developed multiple iterations of the platform in Figma, starting with low-fidelity prototypes to test the core idea and gradually refining them into more detailed and interactive versions. Each iteration focused on improving usability, simplifying flows, and making the experience clearer for the user.
+           We continuously tested the concept with trainees, stakeholders, and the client. Based on this feedback, I adjusted the designs and interactions.<br><br>
+           One key shift came when we realized the initial toolbox was too rigid — together we decided to move toward a more flexible system where users could generate tailored outcomes instead.
+           Alongside the product, I created and applied a styleguide to ensure visual consistency across the project. I also handled the digital communication side by keeping the WordPress project page up to date, making sure progress and iterations were clearly documented.</p>
+      </section>
+
+      <figure class="project-img-wide">
+        <img src="" alt="Process screenshot" />
+        <figcaption>Process / wireframe — add your image</figcaption>
+      </figure>
+
+      <section class="case-block">
+        <h2 class="case-label">Result</h2>
+        <p class="case-text">The final result was a working prototype of a digital platform supported by a consistent visual system and complementary physical tools.
+           The product was tested with stakeholders and delivered as a concept that could be further developed by the partner. It successfully demonstrated how digital and physical tools can work together to support inclusive collaboration.
+           Looking back, I would focus more on simplifying certain flows earlier in the process. We spent time exploring complex ideas that were later reduced after testing. That said, this process helped me understand the value of iteration, feedback,
+           and staying flexible in a project with many stakeholders.</p>
+      </section>
+
+    </article>
+
+    <!-- prev/next -->
+    <nav class="project-nav" aria-label="Project navigation">
+         <a href="project-grad.html" class="project-nav-prev">
+          <span>Previous</span>
+          <strong>Project: Graduation - FaunAI</strong>  
+        </a>
+      <a href="project-51.html" class="project-nav-next">
+        <span>Next</span>
+        <strong>Project: 51WESTFILMS</strong>
+      </a>
+    </nav>
+
+  </main>
+
+  <script>
+    const cursor = document.getElementById('cursor');
+    document.addEventListener('mousemove', e => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top  = e.clientY + 'px';
+    });
+  </script>
+
+</body>
+</html>
